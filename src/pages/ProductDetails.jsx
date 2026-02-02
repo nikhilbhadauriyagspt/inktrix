@@ -6,6 +6,7 @@ import { useWishlist } from '../context/WishlistContext';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/SchemaMarkup';
 import toast from 'react-hot-toast';
+import Skeleton from '../components/Skeleton';
 import { 
     Star, ShoppingBag, Heart, ShieldCheck, Truck, 
     Minus, Plus, ChevronRight, Share2, Zap, RotateCcw,
@@ -57,12 +58,38 @@ const ProductDetails = () => {
         toast.success(`Acquired ${product.name}`);
     };
 
-    if (loading) return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-white gap-4">
-            <div className="w-12 h-12 border-2 border-neutral-100 border-t-brand-600 rounded-full animate-spin"></div>
-            <p className="text-[10px] font-black text-neutral-400 uppercase tracking-widest">Calibrating Hardware</p>
-        </div>
-    );
+    if (loading) {
+        return (
+            <div className="bg-white min-h-screen font-sans pb-32">
+                {/* Skeleton Header */}
+                <div className="bg-neutral-950 pt-32 pb-12 lg:pt-40 lg:pb-16 relative overflow-hidden">
+                    <div className="container mx-auto px-6 relative z-10">
+                        <Skeleton className="h-4 w-64 bg-white/10 rounded-full" />
+                    </div>
+                </div>
+                
+                <div className="container mx-auto px-6 -mt-8 relative z-20">
+                    <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
+                        {/* Left Skeleton */}
+                        <div className="w-full lg:w-1/2">
+                            <Skeleton className="h-[500px] w-full rounded-[4rem] bg-neutral-100" />
+                        </div>
+                        {/* Right Skeleton */}
+                        <div className="w-full lg:w-1/2 pt-10">
+                            <Skeleton className="h-6 w-32 mb-6 rounded-full" />
+                            <Skeleton className="h-16 w-3/4 mb-8 rounded-2xl" />
+                            <Skeleton className="h-12 w-48 mb-10 rounded-xl" />
+                            <Skeleton className="h-24 w-full mb-12 rounded-2xl" />
+                            <div className="flex gap-6">
+                                <Skeleton className="h-16 w-40 rounded-2xl" />
+                                <Skeleton className="h-16 flex-1 rounded-2xl" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 
     if (!product) return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white text-center p-6">
@@ -150,7 +177,7 @@ const ProductDetails = () => {
                                     <Star size={14} fill="currentColor" />
                                 </div>
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-serif text-neutral-900 leading-tight mb-8 tracking-tighter">{product.name}</h1>
+                            <h1 className="text-3xl md:text-5xl font-serif text-neutral-900 leading-tight mb-8 tracking-tighter">{product.name}</h1>
                             
                             <div className="flex items-end gap-4 mb-10">
                                 <span className="text-5xl font-black text-neutral-900 tracking-tighter">${product.price}</span>
@@ -159,7 +186,7 @@ const ProductDetails = () => {
                                 )}
                             </div>
 
-                            <p className="text-neutral-500 text-lg leading-relaxed font-light mb-12 border-l-2 border-brand-500/20 pl-8">
+                            <p className="text-neutral-500 text-lg leading-relaxed font-light mb-12 border-l-2 border-brand-500/20 pl-8 line-clamp-4">
                                 {product.description}
                             </p>
                         </div>

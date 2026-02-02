@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+:root {
+  --primary-color: #D4AF37; /* Classic Metallic Gold */
+  --bg-dark: #0a0a0a;      /* Pure Deep Black */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@theme {
+  --color-brand-50: #fffdf0;
+  --color-brand-100: #fef9c3;
+  --color-brand-200: #fde68a;
+  --color-brand-300: #fcd34d;
+  --color-brand-400: #fbbf24;
+  --color-brand-500: #D4AF37; /* Metallic Gold */
+  --color-brand-600: #B8860B; /* Dark Gold */
+  --color-brand-700: #996515; /* Golden Brown */
+  --color-brand-800: #7a4d0f;
+  --color-brand-900: #451a03;
+  --color-brand-950: #260e01;
+  
+  --color-primary: var(--primary-color);
+  --color-midnight: var(--bg-dark);
+
+  --animate-fade-in: fade-in 0.3s ease-out;
+  --animate-zoom-in: zoom-in 0.3s ease-out;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes zoom-in {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc; /* slate-50 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37; /* brand-500 / Gold */
+  border-radius: 10px;
+  border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8860B; /* brand-600 / Dark Gold */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D4AF37 #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-neutral-900 bg-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/70 border border-white/20;
+  }
+  .search-overlay {
+    @apply fixed inset-0 z-[100] bg-white/95 backdrop-blur-xl;
+    animation: fade-in 0.3s ease-out, zoom-in 0.3s ease-out;
+  }
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-300 via-brand-500 to-brand-600;
+  }
+  .bg-gradient-gold {
+    @apply bg-gradient-to-r from-brand-300 via-brand-500 to-brand-600;
+  }
+  .gold-shadow {
+    @apply shadow-[0_0_25px_rgba(212,175,55,0.4)];
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

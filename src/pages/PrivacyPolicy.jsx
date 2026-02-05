@@ -91,8 +91,8 @@ const PrivacyPolicy = () => {
                                         key={item.id}
                                         onClick={() => scrollToSection(item.id)}
                                         className={`block text-left w-full text-xs py-2 px-3 rounded-lg transition-all ${activeSection === item.id
-                                                ? 'bg-brand-50 text-brand-700 font-bold'
-                                                : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
+                                            ? 'bg-brand-50 text-brand-700 font-bold'
+                                            : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900'
                                             }`}
                                     >
                                         {item.label}
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
 
                             <p className="text-slate-600 mb-10">
                                 Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at
-                                inktrikshop@outlook.com.
+                                Inktrixshop@outlook.com.
                             </p>
 
                             <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl mb-12">
@@ -229,7 +229,7 @@ const PrivacyPolicy = () => {
                                 <h2 className="text-2xl pt-4">8. DO WE COLLECT INFORMATION FROM MINORS?</h2>
                                 <p className="text-slate-500 italic">In Short: We do not knowingly collect data from or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction.</p>
                                 <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or the equivalent age as specified by law in your jurisdiction or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age or the equivalent age as specified by law in your jurisdiction has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18 or the equivalent age as specified by law in your jurisdiction, please contact us at
-                                    inktrikshop@outlook.com.</p>
+                                    Inktrixshop@outlook.com.</p>
                             </section>
 
                             <section id="section-9">
@@ -246,7 +246,7 @@ const PrivacyPolicy = () => {
                                 </ul>
                                 <p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
                                 <p>If you have questions or comments about your privacy rights, you may email us at
-                                    inktrikshop@outlook.com.</p>
+                                    Inktrixshop@outlook.com.</p>
                             </section>
 
                             <section id="section-10">
@@ -327,14 +327,14 @@ const PrivacyPolicy = () => {
                                 </ul>
                                 <p><strong>How to Exercise Your Rights</strong></p>
                                 <p>To exercise these rights, you can contact us by submitting a data subject access request, by emailing us at
-                                    inktrikshop@outlook.com, by calling toll-free at +1-402-448-6127, or by referring to the contact details at the bottom of this document.</p>
+                                    Inktrixshop@outlook.com, by calling toll-free at +1-402-448-6127, or by referring to the contact details at the bottom of this document.</p>
                                 <p>Under certain US state data protection laws, you can designate an authorized agent to make a request on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with applicable laws.</p>
                                 <p><strong>Request Verification</strong></p>
                                 <p>Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.</p>
                                 <p>If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
                                 <p><strong>Appeals</strong></p>
                                 <p>Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at
-                                    inktrikshop@outlook.com. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+                                    Inktrixshop@outlook.com. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
                                 <p><strong>California "Shine The Light" Law</strong></p>
                                 <p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?"</p>
                             </section>
@@ -348,13 +348,13 @@ const PrivacyPolicy = () => {
                             <section id="section-13">
                                 <h2 className="text-2xl pt-4">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
                                 <p>If you have questions or comments about this notice, you may email us at
-                                    inktrikshop@outlook.com or contact us by post at:</p>
+                                    Inktrixshop@outlook.com or contact us by post at:</p>
                                 <div className="bg-slate-900 text-slate-100 p-8 rounded-xl flex flex-col md:flex-row gap-8 justify-between mt-6">
                                     <div>
                                         <h4 className="text-white font-bold mb-4">Contact Details</h4>
                                         <div className="space-y-3 text-sm">
                                             <p className="flex items-center gap-2"><Mail size={14} className="text-brand-400" />
-                                                inktrikshop@outlook.com</p>
+                                                Inktrixshop@outlook.com</p>
                                             <p className="flex items-center gap-2"><Phone size={14} className="text-brand-400" /> +1-402-448-6127</p>
                                         </div>
                                     </div>

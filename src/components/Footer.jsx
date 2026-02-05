@@ -145,9 +145,9 @@ const Footer = () => {
                         </p>
                         <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-start">
                             <Link to="/privacy-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Privacy Policy</Link>
-                            <Link to="/terms-of-service" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Terms of Service</Link>
+                            <Link to="/terms-of-service" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Terms and Conditions</Link>
                             <Link to="/shipping-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Shipping Policy</Link>
-                            <Link to="/refund-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Refund Policy</Link>
+                            <Link to="/refund-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Return Policy</Link>
                         </div>
                     </div>
 

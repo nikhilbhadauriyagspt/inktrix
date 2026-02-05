@@ -45,6 +45,7 @@ import MyOrders from './pages/MyOrders';
 import UserProfile from './pages/UserProfile';
 import AboutUs from './pages/AboutUs';
 import PolicyPage from './pages/PolicyPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -195,6 +196,7 @@ function App() {
                 <Route path="/orders" element={<MyOrders />} />
                 <Route path="/profile" element={<UserProfile />} />
                 <Route path="/settings" element={<UserProfile />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/pages/:type" element={<PolicyPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

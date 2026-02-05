@@ -45,6 +45,9 @@ const Navbar = () => {
 
     const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
+    const isPolicyPage = ['/privacy-policy', '/terms-of-service', '/shipping-policy', '/refund-policy'].includes(location.pathname);
+    const showSolidNav = isScrolled || isPolicyPage;
+
     return (
         <>
             <SearchBar isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
@@ -71,10 +74,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <header className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 px-4 md:px-6 py-4 ${isScrolled ? 'top-0 py-2' : 'top-0'
+            <header className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 px-4 md:px-6 py-4 ${showSolidNav ? 'top-0 py-2' : 'top-0'
                 }`}>
-                <div className={`container mx-auto transition-all duration-500 rounded-2xl ${isScrolled
-                    ? 'bg-neutral-900/80 backdrop-blur-xl shadow-2xl border border-white/10 py-2 px-6'
+                <div className={`container mx-auto transition-all duration-500 rounded-2xl ${showSolidNav
+                    ? 'bg-neutral-900/90 backdrop-blur-xl shadow-2xl border border-white/10 py-2 px-6'
                     : 'bg-transparent py-2 px-4'
                     }`}>
                     <div className="flex items-center justify-between">
@@ -99,7 +102,7 @@ const Navbar = () => {
 
                                                             <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-500 ${
 
-                                                                isScrolled ? 'bg-gradient-gold text-white gold-shadow' : 'bg-brand-600 text-white shadow-lg gold-shadow'
+                                                                showSolidNav ? 'bg-gradient-gold text-white gold-shadow' : 'bg-brand-600 text-white shadow-lg gold-shadow'
 
                                                             }`}>
 
@@ -109,7 +112,7 @@ const Navbar = () => {
 
                                                             <span className={`text-xl font-bold tracking-tight transition-colors duration-500 ${
 
-                                                                isScrolled ? 'text-white' : 'text-white drop-shadow-md'
+                                                                showSolidNav ? 'text-white' : 'text-white drop-shadow-md'
 
                                                             }`}>
 
@@ -134,7 +137,7 @@ const Navbar = () => {
                         <div className="flex items-center gap-2">
                             <button
                                 onClick={() => setIsSearchOpen(true)}
-                                className={`hidden sm:flex items-center gap-2 px-4 py-3 w-56 rounded-full border transition-all duration-300 group ${isScrolled
+                                className={`hidden sm:flex items-center gap-2 px-4 py-3 w-56 rounded-full border transition-all duration-300 group ${showSolidNav
                                     ? 'border-white/10 hover:border-brand-500/50 bg-white/5 hover:bg-white/10'
                                     : 'border-white/20 hover:border-white/40 bg-black/20 hover:bg-black/30'
                                     }`}
@@ -168,7 +171,7 @@ const Navbar = () => {
                             <div className="relative pl-1">
                                 <button
                                     onClick={() => setIsProfileOpen(!isProfileOpen)}
-                                    className={`flex items-center justify-center w-8 h-8 rounded-full border transition-all overflow-hidden ${isScrolled ? 'border-white/10 hover:border-brand-500' : 'border-white/30 hover:border-white'
+                                    className={`flex items-center justify-center w-8 h-8 rounded-full border transition-all overflow-hidden ${showSolidNav ? 'border-white/10 hover:border-brand-500' : 'border-white/30 hover:border-white'
                                         }`}
                                 >
                                     <div className="w-full h-full bg-neutral-800 flex items-center justify-center text-white">

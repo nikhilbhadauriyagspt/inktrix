@@ -93,7 +93,6 @@ const Home = () => {
     const getTabProducts = () => {
         if (activeTab === 'New Arrivals') return [...products].sort((a, b) => b.id - a.id).slice(0, 8);
         if (activeTab === 'Featured Gear') return products.filter(p => p.is_best_selling).slice(0, 8);
-        if (activeTab === 'On Sale') return products.filter(p => parseFloat(p.mrp) > parseFloat(p.price)).slice(0, 8);
         return products.slice(0, 8);
     };
 
@@ -152,7 +151,7 @@ const Home = () => {
 
                         <div className="flex flex-col items-end gap-8 self-end">
                             <div className="flex p-1 bg-neutral-50 rounded-full border border-neutral-200">
-                                {['New Arrivals', 'Featured Gear', 'On Sale'].map(tab => (
+                                {['New Arrivals', 'Featured Gear'].map(tab => (
                                     <button
                                         key={tab}
                                         onClick={() => setActiveTab(tab)}

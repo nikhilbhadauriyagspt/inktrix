@@ -140,14 +140,14 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
                     <div className="text-center md:text-left space-y-2">
-                        <p className="text-xs font-medium text-slate-600 uppercase tracking-widest">
+                        <p className="text-sm font-medium text-slate-600 uppercase tracking-widest">
                             © 2026 {branding.name}. A subsidiary of PrimeFix Solutions LLC. All Rights Reserved.
                         </p>
                         <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-start">
-                            <Link to="/privacy-policy" className="text-[10px] font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Privacy Policy</Link>
-                            <Link to="/terms-of-service" className="text-[10px] font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Terms of Service</Link>
-                            <Link to="/shipping-policy" className="text-[10px] font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Shipping Policy</Link>
-                            <Link to="/refund-policy" className="text-[10px] font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Refund Policy</Link>
+                            <Link to="/privacy-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Privacy Policy</Link>
+                            <Link to="/terms-of-service" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Terms of Service</Link>
+                            <Link to="/shipping-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Shipping Policy</Link>
+                            <Link to="/refund-policy" className="text-xs font-bold text-slate-700 hover:text-brand-500 transition-colors uppercase tracking-widest">Refund Policy</Link>
                         </div>
                     </div>
 

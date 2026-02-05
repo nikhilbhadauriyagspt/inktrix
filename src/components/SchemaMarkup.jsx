@@ -25,11 +25,6 @@ const SchemaMarkup = ({ type, data }) => {
                 "price": data.price,
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": data.stock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock"
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": data.rating || 4.5,
-                "reviewCount": data.review_count || 1
             }
         });
 

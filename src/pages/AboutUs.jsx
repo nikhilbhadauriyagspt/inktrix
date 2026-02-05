@@ -63,13 +63,13 @@ const AboutUs = () => {
                                 className="relative"
                             >
                                 <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white/5 relative group">
-                                    <img src="/about-us.jpg" className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110" alt="Our Team" />
+                                    <img src="/about-us.jpg" className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110" alt="Our Workspace" />
                                     <div className="absolute inset-0 bg-neutral-900/20 group-hover:bg-transparent transition-colors duration-700"></div>
                                 </div>
                                 {/* Subtle Badge */}
                                 <div className="absolute -bottom-6 -left-6 bg-brand-600 text-white p-6 rounded-2xl shadow-xl gold-shadow hidden md:block z-20">
-                                    <p className="text-3xl font-black leading-none mb-1">10</p>
-                                    <p className="text-[8px] font-bold uppercase tracking-widest leading-tight">Years of <br/>Expertise</p>
+                                    <p className="text-3xl font-black leading-none mb-1">HQ</p>
+                                    <p className="text-[8px] font-bold uppercase tracking-widest leading-tight">Professional <br/>Sourcing</p>
                                 </div>
                             </motion.div>
                         </div>
@@ -83,13 +83,12 @@ const AboutUs = () => {
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <div className="order-2 lg:order-1">
                             <div className="bg-neutral-900 rounded-[3rem] p-12 text-white relative overflow-hidden">
-                                <Quote className="text-brand-500 mb-6 opacity-50" size={40} />
+                                <ShieldCheck className="text-brand-500 mb-6 opacity-50" size={40} />
                                 <p className="text-2xl font-serif leading-relaxed mb-8 italic">
-                                    "We curate the instruments of professional efficiency, ensuring that quality is never a variable, but a constant."
+                                    "Our commitment is to deliver high-performance hardware that meets the rigorous demands of professional environments."
                                 </p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center text-white font-bold">JD</div>
-                                    <p className="text-sm font-bold text-neutral-300 uppercase tracking-widest">Founding Vision</p>
+                                    <p className="text-sm font-bold text-neutral-300 uppercase tracking-widest">Quality Assurance Team</p>
                                 </div>
                             </div>
                         </div>

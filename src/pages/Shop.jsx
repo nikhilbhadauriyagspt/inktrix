@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { 
-    Filter, Search, Star, Heart, ShoppingBag, X, 
+    Filter, Search, Heart, ShoppingBag, X, 
     CheckCircle2, ChevronDown, SlidersHorizontal, ArrowUpRight, Zap, ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';

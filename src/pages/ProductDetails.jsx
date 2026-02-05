@@ -8,7 +8,7 @@ import SchemaMarkup from '../components/SchemaMarkup';
 import toast from 'react-hot-toast';
 import Skeleton from '../components/Skeleton';
 import { 
-    Star, ShoppingBag, Heart, ShieldCheck, Truck, 
+    ShoppingBag, Heart, ShieldCheck, Truck, 
     Minus, Plus, ChevronRight, Share2, Zap, RotateCcw,
     CheckCircle2, ArrowRight, Award, Globe, ArrowUpRight
 } from 'lucide-react';
@@ -169,13 +169,6 @@ const ProductDetails = () => {
                         <div className="mb-12">
                             <div className="flex items-center gap-4 mb-6">
                                 <span className="text-brand-600 font-black text-[10px] uppercase tracking-[0.4em] bg-brand-50 px-4 py-1.5 rounded-lg">{product.category_name}</span>
-                                <div className="flex text-amber-400 gap-1">
-                                    <Star size={14} fill="currentColor" />
-                                    <Star size={14} fill="currentColor" />
-                                    <Star size={14} fill="currentColor" />
-                                    <Star size={14} fill="currentColor" />
-                                    <Star size={14} fill="currentColor" />
-                                </div>
                             </div>
                             <h1 className="text-3xl md:text-5xl font-serif text-neutral-900 leading-tight mb-8 tracking-tighter">{product.name}</h1>
                             
@@ -223,7 +216,7 @@ const ProductDetails = () => {
                             <TrustModule icon={<Truck size={22} />} title="Global Logistics" desc="Secured transit protocol" />
                             <TrustModule icon={<ShieldCheck size={22} />} title="Elite Warranty" desc="2-Year full coverage" />
                             <TrustModule icon={<Award size={22} />} title="Certified Origin" desc="100% Authentic hardware" />
-                            <TrustModule icon={<Globe size={22} />} title="Cloud Support" desc="24/7 technical concierge" />
+                            <TrustModule icon={<Globe size={22} />} title="Technical Support" desc="Expert assistance available" />
                         </div>
                     </div>
                 </div>
@@ -267,7 +260,7 @@ const ProductDetails = () => {
                                 >
                                     <SpecRow label="Industrial Model" value={`PN-EK${product.id}X`} />
                                     <SpecRow label="Interface" value="Wi-Fi 6, USB-C, BLE 5.2" />
-                                    <SpecRow label="Energy Profile" value="Ultra Low (EnergyStar 4.0)" />
+                                    <SpecRow label="Energy Profile" value="Energy Efficient Design" />
                                     <SpecRow label="Precision" value="Up to 9600 x 2400 DPI" />
                                     <SpecRow label="System Logic" value="macOS, Win 11, Enterprise Linux" />
                                     <SpecRow label="Warranty Tier" value="Premier Professional" />

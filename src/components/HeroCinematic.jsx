@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Play, ChevronLeft, ChevronRight, Sparkles, Star, Search, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Play, ChevronLeft, ChevronRight, Sparkles, Search, ArrowUpRight, ShieldCheck } from 'lucide-react';
 
 const HeroCinematic = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,7 +51,7 @@ const HeroCinematic = () => {
             subtitle: "Enterprise Solutions",
             title: "Reliability.",
             highlight: "Secured",
-            description: "Heavy-duty performance that keeps your business running smoothly 24/7. Trusted by industry leaders worldwide.",
+            description: "Heavy-duty performance that keeps your business running smoothly. Preferred by professionals worldwide.",
             cta: "Browse Solutions"
         }
     ];
@@ -108,16 +108,12 @@ const HeroCinematic = () => {
                             <div key={currentSlide} className="animate-[fadeInUp_0.8s_ease-out]">
                                 
                                 <div className="flex items-center gap-6 mb-10">
-                                    <div className="flex -space-x-3">
-                                        {[1, 2, 3].map((i) => (
-                                            <div key={i} className="w-8 h-8 rounded-full border-2 border-neutral-900 bg-neutral-800 flex items-center justify-center overflow-hidden">
-                                                <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="user" className="w-full h-full object-cover opacity-80" />
-                                            </div>
-                                        ))}
+                                    <div className="w-12 h-12 rounded-2xl bg-brand-500/20 flex items-center justify-center text-brand-400">
+                                        <Sparkles size={20} />
                                     </div>
                                     <div className="h-4 w-px bg-white/20"></div>
                                     <span className="text-brand-200 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs">
-                                        Trusted by 5,000+ Professionals
+                                        Professional Technology Solutions
                                     </span>
                                 </div>
 

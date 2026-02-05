@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, ShoppingCart, Star, Clock, Zap, MoveRight } from 'lucide-react';
+import { ArrowUpRight, ShoppingCart, ShieldCheck, Clock, Zap, MoveRight } from 'lucide-react';
 
 const HeroModern = () => {
   const [timeLeft, setTimeLeft] = useState({ hours: 10, minutes: 45, seconds: 30 });
@@ -127,10 +127,10 @@ const HeroModern = () => {
 
         {/* --- BOTTOM STATS BAR --- */}
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <StatBox icon={<ShoppingCart size={18} />} title="Free Shipping" subtitle="On all orders > $500" />
-            <StatBox icon={<Star size={18} />} title="4.9/5 Rating" subtitle="Verified Reviews" />
-            <StatBox icon={<Zap size={18} />} title="Fast Delivery" subtitle="24h Dispatch" />
-            <StatBox icon={<Clock size={18} />} title="24/7 Support" subtitle="Expert Assistance" />
+            <StatBox icon={<ShoppingCart size={18} />} title="Secure Checkout" subtitle="Encrypted transactions" />
+            <StatBox icon={<ShieldCheck size={18} />} title="Quality Assured" subtitle="Genuine products only" />
+            <StatBox icon={<Zap size={18} />} title="Fast Delivery" subtitle="Efficient order processing" />
+            <StatBox icon={<Clock size={18} />} title="Support Hub" subtitle="Technical assistance available" />
         </div>
 
       </div>
